@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  *{
+  margin:0px;
+  padding:0px;
+  font-family:arial;
+  border:border-box;
+}
+.navbar{
+  height:60px;
+  background-color: #0f1111;
+  color:white;
+  display:flex;
+  align-items:center;
+}
+.nav_logo{
+  height:50px;
+  width:100px;
+}
+.logo{
+  height:50px;
+  width:100%;
+  background-size: cover;
+  color:#2162A1;
+  background-image:url("https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg");
+}
+.border{
+  border:1.5px solid transparent;
+}
+.border:hover{
+  border: 1.5px solid white;
+}
+.location{
+  font-size:13px;
+  color:#cccccc;
+  margin-left:45px;
+}
+.country{
+  font-size:20px;
+  margin-left:3px;
+  color:#ffffff;
+}
+.add-icon{
+  display:flex;
+  align-items:center;
+  margin-left:40px;
+}
+.searchbar{
+  display:flex;
+  justify-content: space-evenly;
+  border-radius:3px;
+  width:600px;
+  margin-left:30px;
+  height:35px;
+  text-align:center;
+}
+.search-icon{
+  background-color:#FE9900;
+  color:black;
+}
+.lang{
+  display:flex;
+  border-radius: 3px;
+}
+.eng{
+  font-size:12px;
+  font-weight:bolder;
+  margin-left:2px;
+}
+.select{
+  color:#0F1111;
+  background-color: #FFFFFF;
+  width:48px;
+  text-align:center;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+  border:none;
+}
+.sign{
+  display:inline-block;
+  margin-left:10px;
+}
+.hello{
+  font-size:14px;
+}
+.list{
+  font-size:18px;
+  font-weight: bolder;
+}
+.status{
+  margin-left:15px;
+}
+.return{
+  font-size:14px;
+}
+.order{
+  font-size:18px;
+  font-weight: bolder;
+}
+.cart{
+  font-size:30px;
+  display: flex;
+  margin-left:5px;
+}
+.cartname{
+  font-size:15px;
+  font-weight:bolder;
+  align-self:flex-end;
+}
+.search-input{
+  width:600px;
+  height:31.5px;
+  font-size:17px;
+}
+.select{
+  background-color: #C7C3C3;
+  height:35px;
+}
+#flag{
+  margin-left:7px;
+}
+.searchbar:hover{
+  border:2px solid orange;
+}
+.panel{
+  height:39px;
+  display:flex;
+  align-items: center;
+  background-color:#141242;
+  color:white;
+  font-size:14px;
+}
+.all{
+  font-weight: bold;
+  font-size:16px;
+}
+.deal,.prime,.gift,.sell,.service,.reg{
+  font-size:14px;
+  margin-left:22px;
+}
+.elec{
+  font-size:14px;
+  margin-left:450px;
+  font-weight: bold;
+}
+.main{
+  height:270px;
+  background-image: url("hero_image.jpg");
+  background-size: cover;
+}
+.app{
+  height:420px;
+  display:flex;
+  margin-top:20px;
+}
+.images{
+  display:flex;
+  background-color: #ded8d8;
+}
+.box1,.box2,.box3,.box4{
+  height:420px;
+  width:301.667px;
+  margin-top: 0px;
+}
+.box1{ 
+  background-color: #FFFFFF;
+  margin-right:7px;
+}
+.box2{ 
+  background-color:#FFFFFF;
+  margin-right:7px;
+  margin-left:7px;
+}
+.box3{
+   background-color: #FFFFFF;
+   margin-right:7px;
+  margin-left:7px;
+  }
+.box4{ 
+  background-color: #FFFFFF;
+  margin-left:7px;
+}
+.beauty{
+  height:328.62px;
+  width:250px;
+  margin-left:21px;
+  margin-top:5px;
+  background-image: url("https://th.bing.com/th/id/OIP.vlF36ZaWlYXNBN_jy6uzLwHaFk?w=224&h=180&c=7&r=0&o=7&cb=12&dpr=1.5&pid=1.7&rm=3");
+  background-size: cover;
+  align-items:center;
+}
+.routine{
+  margin-left:18px;
+  margin-top:2px;
+}
+.phone{
+   height:328.62px;
+  width:250px;
+  margin-left:21px;
+  margin-top:28px;
+  background-image: url("https://th.bing.com/th/id/OIP.K56onL2GNkKb55ta9rMRiQHaJ4?w=136&h=181&c=7&r=0&o=7&cb=12&dpr=1.5&pid=1.7&rm=3");
+   background-size: cover;
+  align-items:center;
+}
+.sam{
+  margin-top:3px;
+  margin-left:18px;
+}
+.watch{
+  height:328.62px;
+  width:250px;
+  margin-left:21px;
+  margin-top:28px;
+  background-image: url("https://images.pexels.com/photos/3766111/pexels-photo-3766111.jpeg?cs=srgb&dl=photo-of-analog-sapphire-wrist-watch-3766111.jpg&fm=jpg");
+  background-size: cover;
+  align-items:center;
+}
+.purchase{
+  margin-top:3px;
+  margin-left:18px;
+}
+.home{
+  height:328.62px;
+  width:250px;
+  margin-left:21px;
+  margin-top:8px;
+  background-image: url("https://th.bing.com/th/id/OIP.JGHHLoNQI0jItykhmTlyZwHaLB?w=202&h=301&c=7&r=0&o=7&cb=12&dpr=1.5&pid=1.7&rm=3");
+  background-size: cover;
+  align-items:center;
+  margin-right:3px;
+}
+.decor{
+  margin-top:3px;
+  margin-left:18px;
+}
+.app2{
+  margin-top:40px;
+}
+.box6,.box7,.box5,.box8{
+  height:420px;
+  width:301.667px;
+  margin-top: 0px;
+}
+.box5{ 
+  background-color: #FFFFFF;
+  margin-right:7px;
+}
+.box6{ 
+  background-color:#FFFFFF;
+  margin-right:7px;
+  margin-left:7px;
+}
+.box7{
+   background-color: #FFFFFF;
+   margin-right:7px;
+  margin-left:7px;
+  }
+.box8{ 
+  background-color: #FFFFFF;
+  margin-left:7px;
+}
+.dress{
+margin-top:3px;
+  margin-left:18px;
+}
+.dresspic{
+  height:328.62px;
+  width:250px;
+  margin-left:21px;
+  margin-top:8px;
+   background-image:url("https://th.bing.com/th/id/OIP.9g0ydbsluW40FgM1D1izGgHaKG?w=202&h=275&c=7&r=0&o=7&cb=12&dpr=1.5&pid=1.7&rm=3");
+   background-size: cover;
+  align-items:center;
+  margin-right:3px;
+}
+.fashion{
+   margin-top:5px;
+  margin-left:18px;
+}
+.space{
+margin-top:3px;
+  margin-left:18px;
+}
+.furpic{
+  height:328.62px;
+  width:250px;
+  margin-left:21px;
+  margin-top:8px;
+   background-image:url("https://th.bing.com/th/id/OIP.1h3Lf4AoYlYPU8WNxHmn_gHaHa?w=172&h=180&c=7&r=0&o=7&cb=12&dpr=1.5&pid=1.7&rm=3");
+   background-size: cover;
+  align-items:center;
+  margin-right:3px;
+}
+.fur{
+   margin-top:3px;
+  margin-left:18px;
+}
+.jewel{
+margin-top:3px;
+  margin-left:18px;
+}
+.jewpic{
+  height:328.62px;
+  width:250px;
+  margin-left:21px;
+  margin-top:8px;
+   background-image:url("https://th.bing.com/th/id/OIP.NINSn9A9sfNicfnO5Pm8BQHaFr?w=254&h=194&c=7&r=0&o=7&cb=12&dpr=1.5&pid=1.7&rm=3");
+   background-size: cover;
+  align-items:center;
+  margin-right:3px;
+}
+.gold{
+   margin-top:3px;
+  margin-left:18px;
+}
+.kitchen{
+margin-top:3px;
+  margin-left:18px;
+}
+.kitpic{
+  height:328.62px;
+  width:250px;
+  margin-left:21px;
+  margin-top:8px;
+   background-image:url("https://th.bing.com/th/id/OIP.4bqLzklp44GQcQ0Wz2orKAHaJQ?w=116&h=180&c=7&r=0&o=7&cb=12&dpr=1.5&pid=1.7&rm=3");
+   background-size: cover;
+  align-items:center;
+  margin-right:3px;
+}
+.kits{
+   margin-top:3px;
+  margin-left:18px;
+}
+#footer{
+    margin-top:100px;
+    height:400px;
+    width:100%;
+    background-color:#232f3e;
+    color:white;
+    display:flex;
+}
+#id1,#id2,#id3,#id4{
+  color:#C7C3C3;
+  height:300px;
+  width:450px;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:40px;
+}
+.heading{
+  margin-bottom:30px;
+   color:white;
+}
+.divs{
+  font-size:light;
+  margin-top:10px;
+}
+#foot{
+  height:100px;
+  width:00px;
+}
+.footlogo{
+  height:30px;
+  width:70px;
+  background-size: cover;
+  margin-top:20px;
+  color:#2162A1;
+  background-image:url("https://www.bing.com/images/search?view=detailV2&ccid=EgkB95BJ&id=8805D4E553CD8652F33E52DC220263621E376021&thid=OIP.EgkB95BJD2RgQXXEf_rDUgHaEK&mediaurl=https%3a%2f%2flarrybrownsports.com%2fwp-content%2fuploads%2f2021%2f02%2famazon-logo.jpg&exph=843&expw=1500&q=amazon+logo+jpg&FORM=IRPRST&ck=00EC53B633D39CE7712233AACEF0CA7B&selectedIndex=23&itb=0");
+}
+
+</style>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="nav_logo border">
+        <div class="logo"></div>
+      </div>
+      <div class="address border">
+        <p class="location">Deliver to</p>
+        <div class="add-icon">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="country">India</p>
+        </div>
+      </div>
+      <div class="searchbar">
+        <select class="select">
+          <option class="type">All</option>
+          <input placeholder="Search Amazon" class="search-input" >
+          <div class="search-icon border">
+            <i class="fa-solid fa-magnifying-glass" id="mag" ></i>
+          </div>
+        </select>
+      </div>
+      <div class="lang border">
+       <i class="fa-solid fa-flag-usa" id="flag"></i>
+       <div class="eng">EN</div>
+      </div>
+      <div class="sign border">
+       <div class="hello">Hello, sign in</div>
+       <div class="list">Accounts & Lists</div>
+      </div>
+      <div class="status border">
+        <div class="return">Returns</div>
+        <div class="order">& Orders</div>
+      </div>
+      <div class="cart border">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="cartname">Cart</div>
+      </div>
+  </div>
+  <div class="panel ">
+    <i class="fa-solid fa-bars border"></i>
+    <div class="all border">All</div>
+    <div class="deal border">Today's Deal</div>
+    <div class="prime border">Prime Video</div>
+    <div class="reg border">Registry</div>
+    <div class="gift border">Gift Cards</div>
+    <div class="service border">Costumer Service</div>
+    <div class="sell border">Sell</div>
+    <div class="elec border">Shop deals in Electronics</div>
+  </div>
+</header>
+<main class="middle">
+  <div class="main"></div>
+  <div class="app">
+    <div class="images">
+   <div class="box1">
+    <h2 class="routine">Level up your beauty routine</h2>
+    <div class="beauty"></div>
+    <div class="routine">Makeup</div>
+   </div>
+   <div class="box2">
+    <h2 class="sam">Elevate your Electronics</h2>
+    <div class="phone"></div>
+    <div class="sam">Mobile Phones</div>
+   </div>
+   <div class="box3">
+    <h2 class="purchase">Most-loved watches</h2>
+    <div class="watch"></div>
+    <div class="purchase">Boys</div>
+   </div>
+   <div class="box4">
+    <h2 class="decor">Shop for your home essentials</h2>
+    <div class="home"></div>
+    <div class="decor">Home Decor</div>
+   </div>
+  </div>
+  </div>
+</main>
+<main class="middle-2">
+  <div class="app2">
+    <div class="images">
+   <div class="box5">
+    <h2 class="dress">Fashion trends you like</h2>
+    <div class="dresspic"></div>
+    <div class="fashion">Dresses</div>
+   </div>
+   <div class="box6">
+    <h2 class="space">Easy updates for elevated spaces</h2>
+    <div class="furpic"></div>
+    <div class="fur">Accent Furniture</div>
+   </div>
+   <div class="box7">
+    <h2 class="jewel">Best Sellers Of Jewellery</h2>
+    <div class="jewpic"></div>
+    <div class="gold">Latest Diamond Jewellery</div>
+   </div>
+   <div class="box8">
+    <h2 class="kitchen">Top categories in Kitchen appliances</h2>
+    <div class="kitpic"></div>
+    <div class="kits">Refresh Your Space</div>
+   </div>
+  </div>
+  </div> 
+</main>
+<footer id="footer">
+ <div id="id1">
+  <h3 class="heading"> Get to Know Us</h3>
+ <div class="divs">Careers</div>
+ <div class="divs">Blog</div>
+ <div class="divs">About Amazon</div>
+ <div class="divs">Investor Relations</div>
+ <div class="divs">Amazon Devices</div>
+ <div class="divs">Amazon Science</div>
+ </div>
+  <div id="id2">
+<h3 class="heading"> Make Money with Us</h3>
+ <div class="divs">Sell products on Amazon</div>
+ <div class="divs">Sell on Amazon Business</div>
+ <div class="divs">Sell apps on Amazon </div>
+ <div class="divs">Become an Affiliate</div>
+ <div class="divs">Advertise Your Products</div>
+ <div class="divs">Self-Publish with Us</div>
+ <div class="divs">Host an Amazon Hub</div>
+ <div id="foot">
+      <div class="footlogo"></div>
+    </div>
+  </div>
+   <div id="id3">
+    <h3 class="heading"> Amazon Payment Products</h3>
+    <div class="divs">Amazon Business Card</div>
+    <div class="divs">Shop with Points</div>
+    <div class="divs">Reload Your Balance</div>
+    <div class="divs">Amazon Currency Converter</div>
+   </div>
+    <div id="id4">
+      <h3 class="heading">Let Us Help You</h3>
+      <div class="divs">Amazon and COVID-19</div>
+      <div class="divs">Your Account</div>
+      <div class="divs">Your Orders</div>
+      <div class="divs">Shipping Rates & Policies</div>
+      <div class="divs">Returns & Replacements</div>
+      <div class="divs">Manage Your Content and Devices</div>
+      <div class="divs">Help</div>
+    </div>
+    
+</footer>
+  
+</body>
+</html>
